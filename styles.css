@@ -1,0 +1,28 @@
+:root
+{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    display: block;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    background-color: indianred;
+}
