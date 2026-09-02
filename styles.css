@@ -5,13 +5,14 @@
     --font-secondary: sans-serif;
     
     --color-bg-body: indianred;
-    --color-bg-aside: orange;
-    --color-bg-header: beige;
-    --color-bg-main: pink;
+    --color-bg-aside: rgb(250, 186, 149);
+    --color-bg-header: rgb(250, 222, 199);
+    --color-bg-main: rgb(202, 169, 143);
+    --color-bg-logo: black;
 
-    --color-font-headings: red;
-    --color-font-primary: green;
-    --color-font-secondary: yellow;
+    --color-font-headings: indianred;
+    --color-font-primary: rgb(63, 30, 13);
+    --color-font-secondary: rgb(90, 78, 23);
 
     box-sizing: border-box;
     font-family: var(--font-primary);
@@ -41,6 +42,7 @@ ul
 a
 {
     text-decoration: none;
+    color: var(--color-font-primary)
 }
 
 body
@@ -80,14 +82,28 @@ aside
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-top: 10px;
 }
 
-.title
+aside > *
 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo
+{
+    height: 7%;
     display: flex;
+    background-color: var(--color-bg-logo);
+    opacity: 60%;
     gap: 10px;
+    place-items: center;
+}
+
+.logo svg
+{
+    height: 100%;
 }
 
 aside h1
@@ -109,6 +125,84 @@ aside li
     margin-bottom: 5px;
 }
 
+header
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header > *
+{
+    display: flex;
+    outline: 1px solid red;
+}
+
+.header-top
+{
+    gap: 100px;
+}
+
+.header-top form
+{
+    flex: 1.5;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+form input
+{
+    flex: 1;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    background-color: var(--color-bg-main);
+    color: var(--color-font-secondary);
+    border: none;
+}
+
+form input:focus
+{
+    background-color: var(--color-bg-aside);
+    outline: 3px solid var(--color-font-headings);
+    color: var(--color-font-headings);
+}
+
+form label
+{
+    font-size: 1.5rem;
+}
+
+.profile
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile .notifications
+{
+    font-size: 1.5rem;
+}
+
+.profile img
+{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.profile .name
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.header-bottom
+{
+    gap: 300px;
+}
 
 
 
