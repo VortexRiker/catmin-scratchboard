@@ -6,6 +6,7 @@
     
     --color-bg-body: indianred;
     --color-bg-aside: rgb(250, 186, 149);
+    --color-bg-aside-highlight: rgb(255, 206, 178);
     --color-bg-header: rgb(250, 222, 199);
     --color-bg-main: rgb(202, 169, 143);
     --color-bg-logo: black;
@@ -247,6 +248,21 @@ form label
     font-size: 0.9rem;
     font-weight: bold;
     border-radius: 20px;
+    border: 2px solid var(--color-font-primary)
+}
+
+.controls button:hover
+{
+    background-color: var(--color-bg-aside-highlight);
+    border-color: var(--color-font-headings);
+    color: var(--color-font-headings);
+}
+
+.controls button:active
+{
+    background-color: var(--color-bg-main);
+    border-color: var(--color-font-primary);
+    color: var(--color-font-primary);
 }
 
 
