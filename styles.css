@@ -57,6 +57,7 @@ body
 .page
 {
     height: 100%;
+    flex: 1;
     display: grid;
     grid-template: 1fr 4fr / 1fr 5fr;
 }
@@ -308,9 +309,9 @@ main section .content
 }
 
 main .projects .content
-{
+{   
     display: grid;
-    grid-template: repeat(auto-fit, minmax(70px, 1fr)) / repeat(2, 1fr);
+    grid-template: repeat(auto-fit, minmax(200px, 1fr)) / repeat(2, 1fr);
     gap: 20px;
     place-items: center;
 }
@@ -385,7 +386,18 @@ main .trending .content > *
 
 main .announcements .content > *:not(:last-child)
 {
+    padding-bottom: 5px;
     border-bottom: 2px solid var(--color-font-headings);
+}
+
+main .announcements .content a h3
+{
+    font-size: 0.8rem;
+}
+
+main .announcements .content a p
+{
+    font-size: 0.7rem;
 }
 
 
