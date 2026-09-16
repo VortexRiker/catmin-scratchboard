@@ -331,6 +331,15 @@ main .projects .content div
     grid-template: 0.5fr 3fr 0.5fr / 3fr 0.5fr 0.5fr 0.5fr;
 }
 
+main .projects .content div:hover
+{
+    background-color: var(--color-bg-aside-highlight);
+    outline: 3px solid var(--color-bg-body);
+    position: relative;
+    left: 3px;
+    bottom: 3px;
+}
+
 main .projects .content div h3
 {
     grid-area: 1 / 1 / 2 / 5;
