@@ -29,6 +29,7 @@
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid red; */
 }
 
 img
@@ -89,12 +90,6 @@ aside
     gap: 50px;
 }
 
-aside > *
-{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .logo
 {
     height: 7%;
@@ -103,6 +98,8 @@ aside > *
     opacity: 60%;
     gap: 10px;
     place-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .logo svg
@@ -117,26 +114,38 @@ aside h1
     color: var(--color-font-headings);
 }
 
-aside a
-{
-    font-size: 1.3rem;
-    font-weight: 550;
-    color: var(--color-font-primary);
-}
-
 aside li
 {
     margin-bottom: 5px;
 }
 
-aside li a svg
+aside li a
 {
-    width: 50px;
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: var(--color-font-primary);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
 }
 
-aside li a p
+aside li a:hover
 {
-    display: inline;
+    background-color: var(--color-bg-header);
+}
+aside li a:hover .icon-default
+{
+    visibility: hidden;
+}
+aside li a:hover .icon-hover
+{
+    visibility: visible;
+}
+
+aside li a svg
+{
+    width: 2.5rem;
 }
 
 header
