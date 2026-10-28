@@ -191,11 +191,28 @@ form input:focus
     color: var(--color-font-headings);
 }
 
+form input:hover,
+form label:hover + input
+{
+    outline: 3px solid var(--color-font-headings);
+}
+
 form label
 {
     font-size: 1.5rem;
     width: 60px;
     height: 60px;
+}
+
+form label:has(+ input:hover) .icon-default,
+form label:has(+ input:focus) .icon-default
+{
+    visibility: hidden;
+}
+form label:has(+ input:hover) .icon-hover,
+form label:has(+ input:focus) .icon-hover
+{
+    visibility: visible;
 }
 
 .profile
