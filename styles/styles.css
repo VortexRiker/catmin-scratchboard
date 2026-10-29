@@ -394,10 +394,16 @@ main .projects .content div
     grid-template: 0.5fr 3fr 0.5fr / 3fr 0.5fr 0.5fr 0.5fr;
 }
 
+main .projects .content div:hover,
+main .announcements .content:has(>*:hover),
+main .trending .content:hover
+{
+    outline: 4px solid var(--color-bg-body);
+}
+
 main .projects .content div:hover
 {
     background-color: var(--color-bg-aside-highlight);
-    outline: 3px solid var(--color-bg-body);
     position: relative;
     left: 3px;
     bottom: 3px;
@@ -419,7 +425,6 @@ main .projects .content div .share,
 main .projects .content div .branch
 {
     width: 2rem;
-
 }
 
 main .projects .content div .favorite
@@ -447,21 +452,24 @@ main .trending .content
 {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: center;
     background-color: var(--color-bg-header);
     border-radius: 10px;
-    gap: 10px;
 }
 
-main .announcements .content > *,
-main .trending .content > *
+main .announcements .content > *
 {
-    flex: 1;
+    padding: 20px 20px;
+}
+
+main .announcements .content > *:hover,
+main .trending .content > *:hover
+{
+    background-color: var(--color-bg-aside-highlight);
 }
 
 main .announcements .content > *:not(:last-child)
 {
-    padding-bottom: 20px;
     border-bottom: 2px solid var(--color-font-headings);
 }
 
