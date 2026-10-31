@@ -29,7 +29,7 @@
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 img
@@ -59,7 +59,7 @@ body
 {
     height: 100%;
     display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template: 200px 5fr / 1fr 5fr;
 }
 
 .page header
@@ -334,7 +334,7 @@ form label:has(+ input:focus) .icon-hover
 main
 {
     display: grid;
-    grid-template: 3fr 2fr / 3fr 1fr;
+    grid-template: 540px 2fr / 3fr 1fr;
     gap: 20px;
     padding: 20px 20px;
     box-shadow: inset 0px 0px 5px 1px var(--color-shadow);
@@ -372,7 +372,7 @@ main .trending
 main .projects .content
 {   
     display: grid;
-    grid-template: repeat(auto-fit, minmax(150px, 1fr)) / repeat(2, 1fr);
+    grid-template: repeat(auto-fit, minmax(150px, 250px)) / repeat(2, 1fr);
     gap: 20px;
 }
 
