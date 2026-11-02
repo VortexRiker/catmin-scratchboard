@@ -385,6 +385,7 @@ main .projects .content
 
 main .projects .content .project
 {
+    height: 100%;
     background-color: var(--color-bg-header);
     border-left: 10px solid var(--color-bg-body);
     border-top-right-radius: 10px;
