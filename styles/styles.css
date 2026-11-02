@@ -188,6 +188,11 @@ form input
     appearance: none;
 }
 
+form input::-webkit-search-cancel-button
+{
+    display: none;
+}
+
 form input:focus
 {
     background-color: var(--color-bg-aside);
