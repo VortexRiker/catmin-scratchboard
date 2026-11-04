@@ -363,6 +363,8 @@ form label:has(+ input:focus) .icon-hover
     width: 6.5rem;
     background-color: var(--color-bg-aside);
     color: var(--color-font-primary);
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 20px;
