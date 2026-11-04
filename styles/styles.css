@@ -1,8 +1,37 @@
+@font-face 
+{
+    font-family: "Bungee Inline";
+    src: url(".././media/fonts/BungeeInline.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: "Play";
+    src: url(".././media/fonts/Play.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face 
+{
+    font-family: "Quantico";
+    src: url(".././media/fonts/Quantico.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root
 {
-    --font-headings: sans-serif;
-    --font-primary: sans-serif;
-    --font-secondary: sans-serif;
+    --font-logo: "Bungee Inline";
+    --font-headings: "Bungee Inline";
+    --font-navigation: "Bungee Inline";
+    --font-primary: "Quantico";
+    --font-secondary: "Play";
     
     --color-bg-body: indianred;
     --color-bg-aside: rgb(250, 186, 149);
@@ -55,11 +84,21 @@ body
     background-color: var(--color-bg-body);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: var(--font-headings);
+}
+
 .page
 {
     height: 100%;
     display: grid;
-    grid-template: 225px 1fr / 320px 1fr;
+    grid-template: 200px 1fr / 350px 1fr;
 }
 
 .page header
@@ -110,8 +149,8 @@ aside
 
 aside h1
 {
-    font-size: 1.7rem;
-    font-family: var(--font-headings);
+    font-size: 1.5rem;
+    font-family: var(--font-logo);
     color: var(--color-font-headings);
 }
 
@@ -147,6 +186,11 @@ aside li a:hover .icon-hover
 aside li a svg
 {
     width: 2.5rem;
+}
+
+aside li a p
+{
+    font-family: var(--font-navigation);
 }
 
 header
@@ -301,6 +345,7 @@ form label:has(+ input:focus) .icon-hover
 .self h2
 {
     grid-area: 2 / 2 / 3 / 3;
+    font-family: var(--font-primary);
     font-size: 1.3rem;
     padding-left: 15px;
 }
@@ -469,6 +514,12 @@ main .trending .content > *:hover
     background-color: var(--color-bg-aside-highlight);
 }
 
+main .announcements .content > *:hover h3,
+main .trending .content > *:hover h4
+{
+    color: var(--color-font-headings);
+}
+
 main .announcements .content > *:not(:last-child)
 {
     border-bottom: 2px solid var(--color-font-headings);
@@ -476,12 +527,14 @@ main .announcements .content > *:not(:last-child)
 
 main .announcements .content a h3
 {
-    font-size: 0.8rem;
+    font-family: var(--font-secondary);
+    font-size: 1.0rem;
 }
 
 main .announcements .content a p
 {
-    font-size: 0.7rem;
+        font-family: var(--font-secondary);
+    font-size: 0.75rem;
 }
 
 main .trending .content > *
@@ -500,13 +553,15 @@ main .trending .content a img
 main .trending .content a h4
 {
     grid-area: 1 / 2 / 2 / 3;
-    font-size: 0.7rem;
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
     align-self: end;
 }
 main .trending .content a p
 {
     grid-area: 2 / 2 / 3 / 3;
-    font-size: 0.65rem;
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
     align-self: start;
 }
 
