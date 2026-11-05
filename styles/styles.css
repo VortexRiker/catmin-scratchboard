@@ -132,7 +132,7 @@ aside
 .logo
 {
     height: 7%;
-    min-height: 60px;
+    min-height: 70px;
     display: flex;
     background-color: var(--color-bg-logo);
     opacity: 60%;
@@ -144,6 +144,7 @@ aside
 
 .logo svg
 {
+    flex: 1;
     height: 100%;
 }
 
@@ -579,5 +580,17 @@ main .trending .content a p
 
 @media(max-width: 1200px)
 {
-
+    .page
+    {
+        grid-template: 400px 1fr / 280px 1fr;
+    }
+    .logo
+    {
+        flex-direction: column;
+        min-height: 140px;
+    }
+    /* .logo h1
+    {
+        display: none;
+    } */
 }
