@@ -320,6 +320,7 @@ form label:has(+ input:focus) .icon-hover
 .self
 {
     display: grid;
+    flex-shrink: 0;
     grid-template: repeat(2, 1fr) / 1fr 4fr;
     padding-bottom: 10px; 
 }
@@ -336,6 +337,7 @@ form label:has(+ input:focus) .icon-hover
 .self p
 {
     grid-area: 1 / 2 / 2 / 3;
+    white-space: nowrap;
     font-size: 0.9rem;
     font-weight: bold;  
     padding-left: 15px;
@@ -542,7 +544,8 @@ main .announcements .content a p
 main .trending .content > *
 {
     display: grid;
-    grid-template: 1fr 2fr / 1fr 5fr;
+    grid-template: 25px 2fr / 1fr 5fr;
+    column-gap: 5px;
     padding: 5px 20px;
 }
 
@@ -563,19 +566,17 @@ main .trending .content a h4
     grid-area: 1 / 2 / 2 / 3;
     font-family: var(--font-primary);
     font-size: 0.8rem;
-    align-self: end;
+    align-self: center;
 }
 main .trending .content a p
 {
     grid-area: 2 / 2 / 3 / 3;
     font-family: var(--font-secondary);
     font-size: 0.75rem;
-    align-self: start;
+    /* align-self: start; */
 }
 
+@media(max-width: 1200px)
+{
 
-
-
-
-
-
+}
