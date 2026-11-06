@@ -84,6 +84,35 @@ body
     background-color: var(--color-bg-body);
 }
 
+.maintenance-page
+{
+    background-color: var(--color-bg-header);
+    justify-content: center;
+    align-items: center;
+}
+
+.maintenance-page .message
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 5px solid var(--color-font-headings);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-aside-highlight);
+    color: var(--color-font-headings);   
+}
+.maintenance-page img
+{
+    border: 5px solid var(--color-font-headings);
+    border-radius: 50%;
+}
+.maintenance-page p
+{
+    font-size: 1.2rem;
+}
+
 h1,
 h2,
 h3,
