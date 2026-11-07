@@ -613,12 +613,59 @@ main .trending .content a p
     font-size: 0.75rem;
 }
 
+@media(max-height: 700px)
+{
+    aside 
+    {
+        gap: 25px;
+    }
+    aside li a
+    {
+        font-size: 1.25rem;
+    }
+    aside li a svg
+    {
+        width: 1.9rem;
+    }
+}
+@media(max-height: 500px)
+{
+    aside 
+    {
+        gap: 5px;
+    }
+    aside li a
+    {
+        font-size: 1rem;
+    }
+    aside li a svg
+    {
+        width: 1rem;
+    }
+}
+@media(max-height: 400px)
+{
+    aside 
+    {
+        gap: 5px;
+    }
+    aside li a
+    {
+        font-size: 0.8rem;
+    }
+    aside li a svg
+    {
+        width: 0.8rem;
+    }
+}
+
 @media(max-width: 1300px)
 {
     .page
     {
         grid-template: 265px 1fr / 280px 1fr;
     }
+
     .logo
     {
         flex-direction: column;
